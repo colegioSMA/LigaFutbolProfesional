@@ -1,6 +1,7 @@
 package lfp;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -22,7 +23,7 @@ public class Liga {
 		
 		
 		listaArbitros = new ArrayList<Arbitro>();
-		clasificacion = new TreeMap<>();
+		clasificacion = new HashMap<>();
 		//Inicializamos la clasificación
 		//Todos los equipos con 0 puntos
 		for (int i=0;i<listaEquipos.size();i++) {
