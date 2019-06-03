@@ -1,6 +1,7 @@
 package lfp;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -13,7 +14,7 @@ public class Liga {
 
 	//Lista de todos los equipos de la liga
 	private List<Equipo> listaEquipos = null;
-	//Atributo que indica la clasificación de la liga
+	//Atributo que indica la clasificaciï¿½n de la liga
 	// Equipo - puntos del equipo
 	private Map<Equipo, Integer> clasificacion = null;
 	
@@ -22,8 +23,8 @@ public class Liga {
 		
 		
 		listaArbitros = new ArrayList<Arbitro>();
-		clasificacion = new TreeMap<>();
-		//Inicializamos la clasificación
+		clasificacion = new HashMap<>();
+		//Inicializamos la clasificaciï¿½n
 		//Todos los equipos con 0 puntos
 		for (int i=0;i<listaEquipos.size();i++) {
 			
@@ -35,7 +36,7 @@ public class Liga {
 	
 	
 	/**
-	 * Añade un equipo a la lista de equipos de la liga
+	 * Aï¿½ade un equipo a la lista de equipos de la liga
 	 * @param equipo
 	 * @throws ExcepcionLiga
 	 */
@@ -47,7 +48,7 @@ public class Liga {
 		}
 	}
 	/**
-	 * Añade un arbitro a la lista de arbitros de la liga
+	 * Aï¿½ade un arbitro a la lista de arbitros de la liga
 	 * @param arbitro
 	 * @throws ExcepcionLiga
 	 */
@@ -59,9 +60,9 @@ public class Liga {
 		}
 	}
 	/**
-	 * Método que a partir de dos equipos (local y visitante) y los goles
-	 * obtenidos por ambos equipos, se actualiza la clasificación
-	 * según los puntos obtenidos.
+	 * Mï¿½todo que a partir de dos equipos (local y visitante) y los goles
+	 * obtenidos por ambos equipos, se actualiza la clasificaciï¿½n
+	 * segï¿½n los puntos obtenidos.
 	 * @param equipoLocal
 	 * @param equipoVisitante
 	 * @param golesLocal
@@ -90,7 +91,7 @@ public class Liga {
 	
 	
 	/**
-	 * Obtiene los puntos recibidos al equipo local según
+	 * Obtiene los puntos recibidos al equipo local segï¿½n
 	 * los goles del equipo local y visitante
 	 * @param golesLocal
 	 * @param golesVisitante
@@ -109,7 +110,7 @@ public class Liga {
 	}
 	
 	/**
-	 * Obtiene los puntos recibidos al equipo local según
+	 * Obtiene los puntos recibidos al equipo local segï¿½n
 	 * los goles del equipo local y visitante
 	 * @param golesLocal
 	 * @param golesVisitante
